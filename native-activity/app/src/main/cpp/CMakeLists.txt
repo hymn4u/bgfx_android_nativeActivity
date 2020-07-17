@@ -41,9 +41,6 @@ set(BIMG_DIR)
 get_filename_component(BIMG_DIR "${CMAKE_CURRENT_SOURCE_DIR}/../../../../../bimg" ABSOLUTE)
 add_subdirectory(${BIMG_DIR} bimg)
 
-# 添加bimg-decode库
-#set(BIMG-DECODE_DIR ../../../../../bimg/src)
-#add_subdirectory(${BIMG-DECODE_DIR} bimg-decode)
 
 # 添加ib-compress库
 #set(ib-compress_dir ../../../../../bgfx/3rdparty/ib-compress)
@@ -53,11 +50,6 @@ add_subdirectory(${BIMG_DIR} bimg)
 set(BGFX_DIR)
 get_filename_component(BGFX_DIR "${CMAKE_CURRENT_SOURCE_DIR}/../../../../../bgfx" ABSOLUTE)
 add_subdirectory(${BGFX_DIR} bgfx)
-
-# 添加dear-imgui库
-#set(dear-imgui_dir)
-#get_filename_component(dear-imgui_dir "${CMAKE_CURRENT_SOURCE_DIR}/../../../../../bgfx/3rdparty/dear-imgui" ABSOLUTE)
-#add_subdirectory(${dear-imgui_dir} dear-imgui)
 
 # 添加examples-common库
 set(examples-common_dir)
